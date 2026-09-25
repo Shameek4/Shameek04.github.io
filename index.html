@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Data Analyst & Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 scroll-smooth">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-xl font-bold gradient-text">Shameek.dev</div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-blue-600 transition">About</a>
+                    <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+                    <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                    <a href="#achievements" class="hover:text-blue-600 transition">Achievements</a>
+                    <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-600">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-4 text-center">
+            <a href="#about" class="block text-slate-600 hover:text-blue-600">About</a>
+            <a href="#skills" class="block text-slate-600 hover:text-blue-600">Skills</a>
+            <a href="#projects" class="block text-slate-600 hover:text-blue-600">Projects</a>
+            <a href="#achievements" class="block text-slate-600 hover:text-blue-600">Achievements</a>
+            <a href="#contact" class="block text-slate-600 hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="mb-6 inline-block p-1 px-3 rounded-full bg-blue-100 text-blue-600 text-xs font-semibold uppercase tracking-wider">
+                Available for Opportunities
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6">
+                Hi, I'm <span class="gradient-text">Shameek Vardhan Bhatt</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                An aspiring <span class="font-semibold text-slate-800">Data Analyst</span> and <span class="font-semibold text-slate-800">Web Developer</span>.
+                I specialize in turning complex data into actionable insights and building clean, user-friendly web applications.
+                Fresher with a passion for continuous learning and problem solving.
+            </p>
+            <div class="mt-10 flex justify-center space-x-4">
+                <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition shadow-lg shadow-blue-200">View My Work</a>
+                <a href="#contact" class="bg-white text-slate-600 border border-slate-200 px-6 py-3 rounded-lg font-medium hover:bg-slate-50 transition">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Languages -->
+    <section id="skills" class="py-20 bg-white px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Technical <span class="gradient-text">Arsenal</span></h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Coding Languages -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                    <div class="flex items-center mb-6">
+                        <i class="fa-solid fa-code text-blue-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold">Coding Languages</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">SQL</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Python</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">JavaScript</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">HTML</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">CSS</span>
+                    </div>
+                </div>
+                <!-- Core Skills -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                    <div class="flex items-center mb-6">
+                        <i class="fa-solid fa-chart-pie text-purple-500 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold">Core Skills</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Power BI</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Tableau</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Excel</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Data Cleaning</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Data Visualization</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Business Analysis</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Data Modeling</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Matplotlib</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Git & GitHub</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Problem Solving</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Teamwork</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Communication</span>
+                        <span class="bg-white px-4 py-2 rounded-lg border border-slate-200 text-sm font-medium shadow-sm">Decision Making</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="text-slate-600">A collection of my work in data and web development.</p>
+            </div>
+
+            <!-- Data Analysis Projects -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold mb-8 flex items-center">
+                    <span class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm mr-3">1</span>
+                    Data Analysis Projects
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Project 1 -->
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 hover:border-blue-400 transition shadow-sm hover:shadow-md">
+                        <h4 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Ride Sharing Analysis Dashboard</h4>
+                        <p class="text-slate-600 mb-4 text-sm">Analyzed a massive dataset of 100,000+ rows and 19 columns to identify trends in bookings, cancellations, revenue, payments, vehicle types, ride distance, and customer ratings.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500">Power BI</span>
+                                <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500">Data Analysis</span>
+                            </div>
+                            <a href="https://github.com/Shameek04" class="text-blue-600 hover:underline text-sm font-medium">View Code <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 hover:border-blue-400 transition shadow-sm hover:shadow-md">
+                        <h4 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">IPL Cricket Analytics & Win Prediction</h4>
+                        <p class="text-slate-600 mb-4 text-sm">Developed a predictive model to analyze cricket match data and predict winning outcomes using statistical analysis and machine learning techniques.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500">Python</span>
+                                <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500">ML</span>
+                            </div>
+                            <a href="https://github.com/Shameek04" class="text-blue-600 hover:underline text-sm font-medium">View Code <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development Projects -->
+            <div>
+                <h3 class="text-2xl font-bold mb-8 flex items-center">
+                    <span class="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm mr-3">2</span>
+                    Web Development Projects
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Web Project 1 -->
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 transition shadow-sm hover:shadow-md">
+                        <h4 class="text-xl font-bold mb-2 group-hover:text-purple-600 transition">[Web Project 1]</h4>
+                        <p class="text-slate-600 mb-4 text-sm">A responsive [Type of App] built using [Tech Stack] featuring [Main Feature].</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500">React</span>
+                                <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500">Tailwind</span>
+                            </div>
+                            <a href="https://github.com/[yourusername]" class="text-purple-600 hover:underline text-sm font-medium">View Code <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Web Project 2 -->
+                    <div class="group bg-white p-6 rounded-2xl border border-slate-200 hover:border-purple-400 transition shadow-sm hover:shadow-md">
+                        <h4 class="text-xl font-bold mb-2 group-hover:text-purple-600 transition">[Web Project 2]</h4>
+                        <p class="text-slate-600 mb-4 text-sm">Developed a [App Type] that allows users to [Functionality].</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500">JavaScript</span>
+                                <span class="text-xs bg-slate-100 px-2 py-1 rounded text-slate-500">Firebase</span>
+                            </div>
+                            <a href="https://github.com/[yourusername]" class="text-purple-600 hover:underline text-sm font-medium">View Code <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 bg-white px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Achievements & <span class="gradient-text">Certifications</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 rounded-xl bg-slate-50 border border-slate-100 flex items-start space-x-4">
+                    <div class="text-yellow-500 text-2xl"><i class="fa-solid fa-award"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">[Certification Name]</h4>
+                        <p class="text-sm text-slate-500">[Issuing Organization] • [Year]</p>
+                    </div>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 border border-slate-100 flex items-start space-x-4">
+                    <div class="text-yellow-500 text-2xl"><i class="fa-solid fa-award"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">[Certification Name]</h4>
+                        <p class="text-sm text-slate-500">[Issuing Organization] • [Year]</p>
+                    </div>
+                </div>
+                <div class="p-6 rounded-xl bg-slate-50 border border-slate-100 flex items-start space-x-4">
+                    <div class="text-yellow-500 text-2xl"><i class="fa-solid fa-award"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">[Certification Name]</h4>
+                        <p class="text-sm text-slate-500">[Issuing Organization] • [Year]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-slate-900 text-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Let's <span class="gradient-text">Connect</span></h2>
+            <p class="text-slate-400 mb-10">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:your-email@example.com" class="flex items-center space-x-2 bg-slate-800 px-6 py-3 rounded-full hover:bg-slate-700 transition border border-slate-700">
+                    <i class="fa-solid fa-envelope text-blue-400"></i>
+                    <span>Email Me</span>
+                </a>
+                <a href="https://linkedin.com/in/Shameek-Bhatt" target="_blank" class="flex items-center space-x-2 bg-slate-800 px-6 py-3 rounded-full hover:bg-slate-700 transition border border-slate-700">
+                    <i class="fa-brands fa-linkedin text-blue-400"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Shameek04" target="_blank" class="flex items-center space-x-2 bg-slate-800 px-6 py-3 rounded-full hover:bg-slate-700 transition border border-slate-700">
+                    <i class="fa-brands fa-github text-white"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-900 text-slate-500 text-center text-sm border-t border-slate-800">
+        <p>&copy; 2026 Shameek Vardhan Bhatt. Built with Tailwind CSS.</p>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
